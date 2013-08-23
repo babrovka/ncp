@@ -164,6 +164,16 @@ body {
 	float: right;
 }
 
+.header-email a, a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-email a:hover {
+	text-decoration: none;
+}
+
+
 
 .picta {
 	height: 12px;
