@@ -1,0 +1,24 @@
+<div class="header">
+	<!--<div class="cell"></div>-->
+	<!--<a href="/"><div class="logo"></div></a>-->
+	<!--	<div class="title_ru"></div>
+		<div class="header_contacts">
+			<a href="mailto:office@scaegroup.com"><img src="/static/scae/base/img/mail.png"/></a>
+			<img src="/static/scae/base/img/phone.png"/ style="margin-left: 35px;">
+		</div>
+	-->
+		
+</div>
+<div class="main_menu">
+	<ul>	
+		
+		<li id="m_news"><%= nav_link "Главная", root_path %></li>
+		<li id="m_about"><%= nav_link "О нас", about_path %></li>
+		<li id="m_activities"><%= link_to "Направления деятельности", activities_path, :class => ('active' if controller?("activities")) %></li>
+		<li id="m_projects"><%= link_to "Проекты", projects_path, :class => ('active' if controller?("projects")) %></li>
+		<li id="m_cooperation"><%= nav_link "Сотрудничество", cooperation_path %></li>
+		<li id="m_jobs"><%= nav_link "Вакансии", vacancies_path %></li>
+		<li id="m_contacts"><%= nav_link "Контакты", contacts_path %></li>
+	</ul>
+</div>
+<br>

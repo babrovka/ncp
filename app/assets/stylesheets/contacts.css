@@ -1,0 +1,25 @@
+.contacts {
+	margin: 0 auto;
+}
+
+.contacts li {
+	display: inline-block;
+	list-style: none;
+}
+
+#address {
+	width: 220px;
+	margin-left: 5px;
+	vertical-align: top;
+}
+
+#map {
+	width: 670px;
+	height: 400px;
+	margin-left: 35px;
+	margin-bottom: 5px;
+}
+
+#map_canvas { 
+	height: 100%;
+}

@@ -1,0 +1,53 @@
+<% @title = 'Вакансии' %>
+
+<div class="main_block">
+	<script>$(function(){
+
+		$('.slider').on('click', function(){
+			$(this).parent('div').parent('li').find('.job_post').attr('data-status', 'opened');
+			preview = $(this).parent('div');
+			content = $(this).parent('div').next('div');
+			preview.slideUp('fast');
+			content.slideDown('fast');
+		});
+
+		$('.slider_close').on('click', function(){
+			$(this).parent('div').parent('li').find('.job_post').attr('data-status', 'closed');
+			content = $(this).parent('div');
+			preview = $(this).parent('div').prev('div');
+			content.slideUp('fast');
+			preview.slideDown('fast');
+		});
+
+		$('.job_post').on('click', function(e){
+			preview = $(this).parent('li').find('.job_preview_2');
+			content = $(this).parent('li').find('.job_content_all');
+			if ($(this).attr('data-status') === 'opened') {
+				$(this).attr('data-status', 'closed');
+				preview.slideDown('fast');
+				content.slideUp('fast');
+			}
+			else if ($(this).attr('data-status') === 'closed') {
+				$(this).attr('data-status', 'opened');
+				preview.slideUp('fast');
+				content.slideDown('fast');
+			};
+		});
+
+	});
+	</script>
+
+	<div class="joblist">		
+				Инженер
+				<ul class="job_content">
+				<li>
+					<div class="job_post" data-status="closed">11.10.2012</div>
+					<div class="job_date">11.10.2012</div>
+					<div class="job_preview_2">Инженер <div class="slider btn-txt" name="entry_{{ entry.id }}">Подробнее...</div></div>
+					<div class="job_content_all">Инженер со знанием компьютера<div class="slider_close btn-txt" name="entry_{{ entry.id }}">Свернуть</div></div>
+				</li>
+				</ul>
+				<br>
+		</div>
+		<div style="clear: both;"></div>
+</div>

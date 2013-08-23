@@ -1,0 +1,176 @@
+.proj-list {
+	position: absolute; 
+	top: 10px; 
+	left: 30px; 
+	text-align: left; 
+	padding: 0; 
+	margin: 0; 
+	width: 200px; 
+	overflow-x: hidden;
+	_border: 1px #f00 solid;
+}
+
+.proj-list > ul {
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0;
+}
+
+.proj-list > ul > li {
+	list-style: none; 
+	margin: 0; 
+	padding: 0;
+}
+
+.proj-content {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	_word-wrap: break-word;
+	width: 710px;
+	overflow-x: hidden; 
+	min-height: 420px;
+	margin-bottom: 20px; 
+	_border: 1px #f00 solid;
+}
+
+.slider-block {
+	position: absolute;
+	top: 0px;
+	right: 55px;
+	_height: 275px;
+	height: 375px;
+	width: 600px;
+	_border: #f00 1px solid;
+}
+
+.slider-img {
+	display: none; /* for slider with fade effect */
+	width: 600px;
+	height: 375px;
+	position: absolute;
+	opacity: 0;
+	_top: 10px;
+	_right: 80px;
+}
+
+.slider-img.active {
+	opacity: 1;
+}
+
+#slide-01 {
+	_background: #f00;
+	background: url('/static/scae/projects/img/slider_01.png') no-repeat;
+}
+
+#slide-02 {
+	_background: #0f0;
+	background: url('/static/scae/projects/img/slider_02.png') no-repeat;
+}
+
+#slide-03 {
+	_background: #00f;
+	background: url('/static/scae/projects/img/slider_03.png') no-repeat;
+}
+
+#slide-04 {
+	_background: #ff0;
+	background: url('/static/scae/projects/img/slider_04.png') no-repeat;
+}
+
+.slider-button {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	_border: #0f0 1px solid;
+}
+
+.slider-block-left {
+	display: none;
+	height: 375px;
+	width: 70px;
+	background: #111;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.slider-block-right {
+	display: none;
+	height: 375px;
+	width: 70px;
+	background: #111;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#slider-prev {
+	position: absolute;
+	top: 162px;
+	left: 10px;
+	background: url('/static/scae/projects/img/b_l.png') no-repeat;
+}
+
+#slider-prev:active {
+	background: url('/static/scae/projects/img/b_l_h.png') no-repeat;
+}
+
+#slider-next {
+	position: absolute;
+	top: 162px;
+	_top: 112px;
+	right: 10px;
+	background: url('/static/scae/projects/img/b_r.png') no-repeat;
+}
+
+#slider-next:active {
+	background: url('/static/scae/projects/img/b_r_h.png') no-repeat;
+}
+
+.slider-preview-block {
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	right: 55px;
+	width: 600px; /* if borders disabled, width: 600px; if enabled width to 602px; */
+	height: 100px;
+	border: #f00 1px solid;
+}
+
+.slider-preview-block > ul > li {
+	float: left;
+	list-style-type: none;
+}
+
+.slider-preview-img {
+	height: 100px;
+	width: 150px;
+}
+
+.slider-preview-img.active {
+	_border: #00f 1px solid;
+	opacity: 0.3;
+}
+
+#slider-preview-img-01 {
+	_background: #f00;
+	background: url('/static/scae/projects/img/slider_01_m.png') no-repeat;
+}
+
+#slider-preview-img-02 {
+	_background: #0f0;
+	background: url('/static/scae/projects/img/slider_02_m.png') no-repeat;
+}
+
+#slider-preview-img-03 {
+	_background: #00f;
+	background: url('/static/scae/projects/img/slider_03_m.png') no-repeat;
+}
+
+#slider-preview-img-04 {
+	_background: #ff0;
+	background: url('/static/scae/projects/img/slider_04_m.png') no-repeat;
+}

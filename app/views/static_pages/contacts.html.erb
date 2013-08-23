@@ -1,0 +1,47 @@
+<% @title = "Контакты" %>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAVIH3d-qyujlL5ONjBEP3YAljxU4zye0U&amp;sensor=false&amp;language=ru"></script>
+<script type="text/javascript">
+    function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(59.913566,30.289069),
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+        var marker = new google.maps.Marker({
+		    position: new google.maps.LatLng(59.913566,30.289069),
+		    title:"ООО НЦПЭ"
+		});
+		marker.setMap(map);
+    }
+</script>
+
+<div class="main_block">
+	<ul class="contacts" style="width: 1000px;">
+		<li id="address" style="margin-left: 30px">
+			<p>
+				<b>Телефон/факс:</b><br>
+				+7 (812) 3242587<br>
+				+7 (812) 3242506<br>
+				+7 (812) 3258329<br>
+				<br>
+				<b>E-mail:</b>
+				<a href="mailto:office@scaegroup.com">office@scaegroup.com</a><br><br>
+				<b>Адрес:</b><br>
+				190103<br>
+				Российския Федерация<br>
+				Санкт-Петербург<br>
+				Рижский проспект, дом 26<br>
+				лит. А пом. 10Н, ком. 22<br>
+			</p><br>
+			<a href="http://maps.yandex.ru/?um=YBZAi0czaBWvpeJ1HM6FC2h9Cy0gYm51&amp;l=map" target="_blank"><div class="btn" style="width:100px; margin-bottom: 5px;">Яндекс.Карты</div></a>
+			<a href="http://goo.gl/maps/xXr1X" target="_blank"><div class="btn" style="width:100px;">Google Maps</div></a>
+		</li>
+		<li id="map">
+			<div id="map_canvas">
+			</div>
+		</li>
+	</ul>
+</div>
