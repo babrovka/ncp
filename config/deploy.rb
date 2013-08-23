@@ -31,6 +31,11 @@ namespace :deploy do
   end
 end
 
+task :copy_database_config do
+   db_config = "#{shared_path}/development.sqlite3"
+   run "cp #{db_config} #{latest_release}/db/development.sqlite3"
+end
+
 
 namespace(:thin) do
   task :stop do
