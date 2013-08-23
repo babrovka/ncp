@@ -32,7 +32,7 @@ namespace :deploy do
 end
 
 task :copy_database_config do
-   run "cp #{shared_path}/development.sqlite3 #{latest_release}/db/development.sqlite3"
+   run "ln -nfs #{shared_path}/development.sqlite3 #{latest_release}/db/development.sqlite3"
 end
 
 
