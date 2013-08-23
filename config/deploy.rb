@@ -50,5 +50,5 @@ namespace(:thin) do
   end
 end
 
-
+before "deploy:assets:precompile", "copy_database_config"
 after "deploy", "deploy:cleanup"
