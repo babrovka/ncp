@@ -1,0 +1,290 @@
+.newslist {
+	float: left;
+	width: 250px;
+	min-height: 400px;
+	word-wrap: break-word;
+	margin-left: 30px;
+}
+
+.actlist {
+	float: left;
+	width: 250px;
+	_min-height: 100px;
+	word-wrap: break-word;
+	margin-left: 30px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.actlist * {
+	list-style-type: none;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: underline;
+	color: #333;
+}
+
+.actlist a:hover {
+	color: rgba(0,65,125,1);
+}
+
+.actlist li {
+	margin-bottom: 5px;
+}
+
+.news_preview {
+	width: 265px;
+	color: #333;
+	vertical-align: top;
+	list-style-type: none;
+}
+
+.news_preview li {
+	height: 100px;
+	vertical-align: top;
+}
+
+.sections {
+	position: relative;
+	left: 35px;
+	top: 10px;
+	float: right;
+	width: 700px;
+	height: 410px;
+}
+
+#sections ul {
+	list-style-type: none;
+}
+
+#sections ul li {
+	_cursor: pointer;
+	float: left;
+}
+
+
+#sections ul li > a {
+	display: block;
+	width: 203px;
+	height: 123px;
+	margin-left: 4px;
+	margin-top: 4px;
+	_box-shadow: 1px 1px 2px #555;
+	border-radius: 5px;
+	background: #fff;
+	border: 2px solid rgba(186,198,210,1);
+
+}
+
+
+
+#square-01 {
+/*	background: #ccc;
+	border: 3px solid #10314B;
+*/
+}
+
+#square-02 {
+/*	background: url("/static/scae/main/img/elms.png") #10314B no-repeat;*/
+}
+
+#square-03 {
+/*	background: url("/static/scae/main/img/rdio.png") #10314B no-repeat;*/
+}
+
+#square-04 {
+/*	background: url("/static/scae/main/img/antn.png") #10314B no-repeat;*/
+}
+
+#square-05 {
+/*	background: url("/static/scae/main/img/tele.png") #10314B no-repeat;*/
+}
+
+#square-06 {
+/*	background: url("/static/scae/main/img/chip.png") #10314B no-repeat;*/
+}
+
+#square-07 {
+/*	background: url("/static/scae/main/img/bpla.png") #10314B no-repeat;*/
+}
+
+#square-08 {
+/*	background: url("/static/scae/main/img/mech.png") #10314B no-repeat;*/
+}
+
+#square-09 {
+/*	background: url("/static/scae/main/img/antn.png") #10314B no-repeat;*/
+}
+
+.block-text {
+	margin-left: 5px;
+	margin-top: 5px;
+	color: rgba(0,65,125,1);
+	font-weight: bold;
+	font-size: 18px;
+	text-align: left;
+	text-shadow: 0px 0px 1px #aaa;
+
+}
+
+.big_img {
+	background:transparent url('/static/scae/main/img/loading.gif') 50% 50% no-repeat;
+	cursor: default;
+	display: none;
+	width: 625px;
+	height: 385px;
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	border: 3px solid;
+	border-color: rgba(0,65,125,1);
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 3px #aaa;
+	-moz-box-shadow: 0 0 3px #aaa;
+	-o-box-shadow: 0 0 3px #aaa;
+	box-shadow: 0 0 3px #aaa;
+	z-index: 10;
+}
+
+#big_img-01 {
+	background: url("/static/scae/main/img/antenna.jpg");
+	background-size: 100%;
+}
+
+#big_img-02 {
+	background: url("/static/scae/main/img/elms.jpg");
+	background-size: 100%;
+}
+
+#big_img-03 {
+	background: url("/static/scae/main/img/radio.jpg");
+	background-size: 100%;
+}
+
+.word-1 {
+	opacity: 0;
+	width: 200px;
+	height: 60px;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 2px #000, 0 0 3px #000, 0 0 5px #000, 0 0 5px #000;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 25px;
+	position: absolute;
+	top: 40px;
+	left: 20px;
+}
+
+.word-2 {
+	opacity: 0;
+	width: 200px;
+	height: 60px;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 2px #000, 0 0 3px #000, 0 0 5px #000, 0 0 5px #000;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 25px;
+	position: absolute;
+	top: 100px;
+	right: 80px;
+}
+
+.word-3 {
+	opacity: 1;
+	width: 200px;
+	height: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 0 1px #000, 0 0 2px #000, 0 0 2px #000, 0 0 3px #000, 0 0 5px #000, 0 0 5px #000;
+	_text-decoration: underline;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 25px;
+	position: absolute;
+	top: 350px;
+	right: -30px;
+}
+
+.word-3:hover {
+	color: #aaa;
+	text-shadow: 0 0 1px #000;
+}
+
+.close {
+	cursor: pointer;
+	opacity: 1;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 5px;
+	right: 2px;
+	background-image: url('/static/scae/main/img/close-button.png');
+}
+
+.n_name {
+	font-weight: normal;
+	text-decoration: underline;
+	color: rgba(0,65,125,1);
+	cursor: pointer;
+}
+
+.n_date {
+	font-style: normal;
+	font-size: 12px;
+	_text-decoration: underline;
+}
+
+.n_preview {
+	margin-bottom: 15px;
+}
+
+.n_preview_2 {
+	margin-bottom: 15px;
+	width: 550px;
+}
+
+.n_content {
+	display: none;
+	width: 700px;
+	_min-height: 600px;
+	_height: auto;
+}
+
+.news_content {
+	width: 250px;
+	color: #222;
+	vertical-align: top;
+	list-style-type: none;
+}
+
+.news_content li {
+	_height: 80px;
+	vertical-align: top;
+}
+
+.arch_slide {
+	width: 150px;
+	list-style-type: none;
+	display: none;
+	margin: 0;
+}
+
+.arch_slide > ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.archive {
+	float: left;
+	width: 250px;
+	min-height: 400px;
+	word-wrap: break-word;
+	margin-left: 30px;
+}
+
+.text_content_p {
+	text-indent: 20px;
+}
