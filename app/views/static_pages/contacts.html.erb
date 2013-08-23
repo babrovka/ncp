@@ -1,6 +1,9 @@
 <% @title = "Контакты" %>
-
+<% content_for :head do %>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAVIH3d-qyujlL5ONjBEP3YAljxU4zye0U&amp;sensor=false&amp;language=ru"></script>
+
+
+<% end %>
 <script type="text/javascript">
     function initialize() {
         var mapOptions = {
@@ -41,6 +44,7 @@
 		</li>
 		<li id="map">
 			<div id="map_canvas">
+				<iframe width="670" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=215077550410267816022.0004da9fd742a1a5a28f0&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=59.913966,30.288727&amp;spn=0.004303,0.014355&amp;z=16&amp;output=embed"></iframe>
 			</div>
 		</li>
 	</ul>
