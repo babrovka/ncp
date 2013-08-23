@@ -23,15 +23,15 @@ ssh_options[:forward_agent] = true
 
 namespace(:thin) do
   task :stop do
-    run "thin stop -C /etc/thin/kzs.yml"
+    run "thin stop -C /etc/thin/ncp.yml"
    end
   
   task :start do
-    run "thin start -C /etc/thin/kzs.yml"
+    run "thin start -C /etc/thin/ncp.yml"
   end
 
   task :restart do
-    run "thin restart -C /etc/thin/kzs.yml"
+    run "thin restart -C /etc/thin/ncp.yml"
   end
 end
 
