@@ -164,7 +164,7 @@ body {
 	float: right;
 }
 
-.header-email a, a:visited {
+.header-email a, .header-email a:visited {
 	color: #fff;
 	text-decoration: none;
 }
